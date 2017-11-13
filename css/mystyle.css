@@ -20,6 +20,9 @@ hr {
     border-color: crimson;
 }
 /*########### My Styles ###########*/
+.sidenav {
+    display: none;
+}
 nav .topnav{
     
     background-color: darkblue;
@@ -145,15 +148,16 @@ form h7 a {
 .top{
     display: block;
     text-align: center;
-    font-family: cursive;
-    color: crimson;
+    font-family: 'Play', sans-serif;
+    color: white;
+    letter-spacing: 2px;
 }
 
 h2{
     color: darkblue;
 }
 .row1{
-    background: linear-gradient(yellow, orange);
+    background: linear-gradient(to bottom, #cc0000 0%, #ff9999 100%);
 }
 
 p{
@@ -275,7 +279,7 @@ footer h7 {
         
     }
     
-    ul.topnav li.ham{
+  ul.topnav li.ham{
         
         display: block;
         float: right;
@@ -287,6 +291,7 @@ footer h7 {
         right: 0;
         
     }
+
 
     
     ul.topnav.responsive{
@@ -300,6 +305,72 @@ footer h7 {
         display: block;
         text-align: left;
     }
+    .sidenav {  
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 1.5s;
+        padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+/*
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+*/
+    padding: 14px;
+    color: #818181;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*
+    ul.topnav.responsive {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: blue;
+        overflow-x: hidden;
+        transition: 2.5s;
+        padding-top: 15px;
+}
+
+ul.topnav.responsive li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+*/
     .col-6 {
         width: 100%;
         margin: 0;
