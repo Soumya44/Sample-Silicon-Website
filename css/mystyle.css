@@ -19,6 +19,35 @@ hr {
     border-width: medium;
     border-color: crimson;
 }
+
+/*############ Drop Down styles ##########*/
+
+nav ul.topnav li {
+    display:  block;
+    float: left;
+/*    width: relative;*/
+}
+.dropdown-content {
+    display: none;  
+    position: absolute;
+/*    margin-left: -30px;*/
+    background-color: darkblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+/*    padding: 12px 16px;*/
+    padding: 0;
+    z-index: 1;
+}
+li.academics:hover > ul {
+    display: block;
+   
+}
+nav ul.topnav ul li {
+    display: block; 
+    float: none;
+}
+
+/*############################*/
 /*########### My Styles ###########*/
 .sidenav {
     display: none;
@@ -33,6 +62,8 @@ nav .topnav{
 ul.topnav li{
     list-style: none;
     float: left;
+    display: block;       /*new*/
+    width: relative;  /*new*/
 
 }
 ul.topnav li.rightnav{
